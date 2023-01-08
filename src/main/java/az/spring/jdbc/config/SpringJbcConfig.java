@@ -13,7 +13,7 @@ import javax.sql.DataSource;
 
 @Configuration
 @ComponentScan(basePackages = "az.spring.jdbc")
-//@PropertySource("db/database.properties") //diger DatabaseConfig clasi olayanda burda deyisenneri elan edib oxuyuruq
+//@PropertySource("db/database.properties") //diger DatabaseConfig clasi olmayanda burda deyisenneri elan edib oxuyuruq
 public class SpringJbcConfig {
     @Bean
     public DataSource dataSource(DataBaseConfig dataBaseConfig) {
